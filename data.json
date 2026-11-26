@@ -196,6 +196,28 @@
           "url": "https://tomochiradio.booth.pm/items/8810095"
         }
       ]
+    },
+    {
+      "id": "wmwxan9uw",
+      "title": "食卓のあとで",
+      "status": "public",
+      "url": "https://note.com/tomochiradio/n/n7b0ba506fea3",
+      "thumb": "",
+      "tags": [
+        "エッセイ",
+        "note",
+        "創作大賞2026応募作品"
+      ],
+      "blocks": [
+        {
+          "type": "text"
+        },
+        {
+          "type": "link",
+          "label": "noteで読む",
+          "url": "https://note.com/tomochiradio/n/n7b0ba506fea3"
+        }
+      ]
     }
   ]
 }
