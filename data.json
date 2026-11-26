@@ -16,6 +16,10 @@
       {
         "label": "フリーム",
         "url": ""
+      },
+      {
+        "label": "SUNO",
+        "url": "https://suno.com/@tomochiiradio"
       }
     ],
     "about": "111111111111111"
@@ -56,6 +60,20 @@
         {
           "type": "text",
           "text": "大切な相手へ想いを届けるための Webチケットサービスです。\nURLを送るだけで、 相手はメッセージを受け取り、 ACCEPT / DECLINE を選択できます。\n・24時間限定チケット\n・回答は1回のみ\n・ステータス確認可能\n・スマホ対応"
+        }
+      ]
+    },
+    {
+      "id": "wmwx79hly",
+      "title": "ぽよんリズム♪♪",
+      "status": "public",
+      "url": "https://unpoko007.itch.io/poyonrhythm",
+      "thumb": "",
+      "tags": [],
+      "blocks": [
+        {
+          "type": "text",
+          "text": "うさぎ（またはねこ）といっしょに遊ぶ、2ボタンのリズムゲームです。\n上から落ちてくる玉が、わっかに重なる瞬間にポン！と弾こう。\nぴったりならPERFECT！つなげて押すとコンボ！\n\nブラウザですぐ遊べます。Windows版のダウンロードもできます。"
         }
       ]
     }
