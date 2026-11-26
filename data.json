@@ -167,6 +167,34 @@
           "url": "https://tomochiradio.booth.pm/items/8809067"
         }
       ]
+    },
+    {
+      "id": "wmwx9oe3l",
+      "title": "全国天気バー配信オーバーレイ",
+      "status": "public",
+      "url": "https://tomochiradio.booth.pm/items/8810095",
+      "thumb": "",
+      "tags": [
+        "無料",
+        "OBS",
+        "配信オーバーレイ",
+        "わんコメ不要"
+      ],
+      "blocks": [
+        {
+          "type": "youtube",
+          "url": "https://www.youtube.com/watch?v=EP875-0NDPE"
+        },
+        {
+          "type": "text",
+          "text": "配信画面の隅に、今の天気をそっと教えてくれるオーバーレイです。北海道から沖縄まで、**47都道府県**の天気が、自動でくるくる切り替わりながら流れます。\n\n晴れ・曇り・雨・雪・雷に合わせて、かわいいアイコンが動きます。昼は太陽、夜は月と星になって、夜は月の満ち欠けも出せます。\n\n形（5種類）と色（6種類）を掛け合わせた、**30通り**から選べます。OBSの画面の右下にある歯車から、見た目や、気温・湿度などの表示を変えられます。\n\nわんコメがなくても、OBSのブラウザソースとして、そのまま使えます。"
+        },
+        {
+          "type": "link",
+          "label": "BOOTHで無料ダウンロード",
+          "url": "https://tomochiradio.booth.pm/items/8810095"
+        }
+      ]
     }
   ]
 }
