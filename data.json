@@ -202,15 +202,15 @@
       "title": "食卓のあとで",
       "status": "public",
       "url": "https://note.com/tomochiradio/n/n7b0ba506fea3",
-      "thumb": "",
+      "thumb": "images/mwxar811c1o.jpg",
       "tags": [
         "エッセイ",
-        "note",
-        "創作大賞2026応募作品"
+        "note"
       ],
       "blocks": [
         {
-          "type": "text"
+          "type": "text",
+          "text": "夜七時の食卓で、祖父のとなりに座って話を聞き続けた日々から生まれたエッセイです。\n祖父母、母、父。完璧ではなかったけれど、確かに生きていた四人の人生を、孫であり娘である私が受け取って書き残しました。(創作大賞2026・エッセイ部門応募作)"
         },
         {
           "type": "link",
