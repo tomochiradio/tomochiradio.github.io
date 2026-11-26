@@ -61,6 +61,7 @@ function render(){
   <label>リンク（GitHub・BOOTH・フリームなど）</label>`;
   (s.links||[]).forEach((l,i)=>h+=`<div class="row"><input style="width:35%" data-k="site.links.${i}.label" value="${esc(l.label)}" placeholder="名前"><input style="width:55%" data-k="site.links.${i}.url" value="${esc(l.url)}" placeholder="https://..."><button class="d" data-a="rmlink" data-i="${i}">×</button></div>`);
   h+=`<div class="row"><button data-a="addlink">＋リンクを足す</button></div>
+  <label>プロフィールの名前（アイコンの横に出ます。空なら出ません）</label><input data-k="site.profileName" value="${esc(s.profileName)}">
   <label>このページについて（空行で段落が分かれます）</label><textarea data-k="site.about">${esc(s.about)}</textarea></div><h2>作品</h2>`;
   D.works.forEach((w,i)=>{
     const k=`works.${i}.`;
