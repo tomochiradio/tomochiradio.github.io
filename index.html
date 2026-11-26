@@ -87,7 +87,8 @@ fetch('data.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
   const s=d.site||{};
   if(s.name){$('name').textContent=s.name;document.title=s.name+'｜制作物まとめ'}
   $('intro').textContent=s.intro||'';
-  if(s.supportUrl){const b=$('support');b.hidden=false;b.innerHTML=`<span class="ico star"></span><span>${esc(s.supportText)}</span><a href="${url(s.supportUrl)}" ${ext}>支援する</a>`}
+  const sb=[[s.supportUrl,s.supportLabel||'支援する'],[s.supportUrl2,s.supportLabel2||'支援する']].filter(x=>url(x[0]));
+  if(sb.length){const b=$('support');b.hidden=false;b.innerHTML=`<span class="ico star"></span><span>${esc(s.supportText)}</span>`+sb.map(x=>`<a href="${url(x[0])}" ${ext}>${esc(x[1])}</a>`).join('')}
   $('links').innerHTML=(s.links||[]).filter(l=>url(l.url)).map(l=>`<li><a href="${url(l.url)}" ${ext}><span class="ico paw" style="width:1.1em;height:1.1em"></span>${esc(l.label)}</a></li>`).join('');
   $('aboutBody').innerHTML=(s.profileName?`<p class="pname">${esc(s.profileName)}</p>`:'')+md(s.about||'');
   const ws=(d.works||[]).filter(w=>w.status!=='hidden');

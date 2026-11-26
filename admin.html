@@ -57,7 +57,10 @@ function render(){
   <label>サイトの名前</label><input data-k="site.name" value="${esc(s.name)}">
   <label>ひとこと紹介</label><input data-k="site.intro" value="${esc(s.intro)}">
   <label>支援バーの文</label><input data-k="site.supportText" value="${esc(s.supportText)}">
-  <label>支援ページのURL（空ならバーは出ません）</label><input data-k="site.supportUrl" value="${esc(s.supportUrl)}">
+  <label>支援ボタン1のURL（両方空ならバーは出ません）</label><input data-k="site.supportUrl" value="${esc(s.supportUrl)}">
+  <label>支援ボタン1の名前（空なら「支援する」）</label><input data-k="site.supportLabel" value="${esc(s.supportLabel)}" placeholder="例：Ko-fi">
+  <label>支援ボタン2のURL（なくてもOK）</label><input data-k="site.supportUrl2" value="${esc(s.supportUrl2)}">
+  <label>支援ボタン2の名前（空なら「支援する」）</label><input data-k="site.supportLabel2" value="${esc(s.supportLabel2)}" placeholder="例：OFUSE">
   <label>リンク（GitHub・BOOTH・フリームなど）</label>`;
   (s.links||[]).forEach((l,i)=>h+=`<div class="row"><input style="width:35%" data-k="site.links.${i}.label" value="${esc(l.label)}" placeholder="名前"><input style="width:55%" data-k="site.links.${i}.url" value="${esc(l.url)}" placeholder="https://..."><button class="d" data-a="rmlink" data-i="${i}">×</button></div>`);
   h+=`<div class="row"><button data-a="addlink">＋リンクを足す</button></div>
