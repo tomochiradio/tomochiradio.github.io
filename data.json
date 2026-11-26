@@ -231,6 +231,24 @@
           "url": "https://note.com/tomochiradio/n/n7b0ba506fea3"
         }
       ]
+    },
+    {
+      "id": "wmwxblo3n",
+      "title": "BINGO.jp(Twitch拡張機能)",
+      "status": "draft",
+      "url": "",
+      "thumb": "images/mwxccsqgb4t.jpg",
+      "tags": [
+        "Twitch拡張機能",
+        "ビンゴ",
+        "配信向け"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "text": "配信を見ながら、視聴者のみんなでビンゴが遊べるTwitch拡張機能です。ブラウザを開かなくても、Twitchの画面の中で「カードをもらう」を押すだけで、1枚無料で参加できます。\n動物ビンゴなど、見た目を切り替えて遊べるようにしています。\n\nTwitchの審査を通過し、私の配信ですでに遊んでいます。ほかの配信者さんも使えるように、公開に向けて準備中です。"
+        }
+      ]
     }
   ]
 }
