@@ -16,6 +16,8 @@ a{color:inherit}:focus-visible{outline:3px solid var(--accent);outline-offset:3p
 .support{position:sticky;top:0;z-index:20;background:var(--accent);color:var(--on);padding:9px 16px;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;font-weight:700;font-size:14px}
 .support a{background:var(--on);color:var(--accent);text-decoration:none;padding:5px 16px;border-radius:999px;font-weight:900}
 .support .ico{background:var(--on);width:1.2em;height:1.2em}
+.support a{display:inline-flex;align-items:center;gap:6px}
+.support a img{height:1.5em;width:auto;display:block}
 main{position:relative;max-width:1000px;margin:0 auto;padding:22px 18px 0}
 .deco{position:absolute;pointer-events:none;user-select:none;z-index:1}
 /* ヘッダーの絵 */
@@ -83,12 +85,13 @@ const block=b=>{
   if(b.type==='link'&&url(b.url))return `<a class="btn" href="${url(b.url)}" target="_blank" rel="noopener noreferrer">${esc(b.label||'リンク')}</a>`;
   return '';};
 const ext='target="_blank" rel="noopener noreferrer"';
+const icon=u=>/ko-fi\.com/i.test(u)?'<img src="images/ui-ic-kofi.png" alt="">':/ofuse\.me/i.test(u)?'<img src="images/ui-ic-ofuse.png" alt="">':'';
 fetch('data.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
   const s=d.site||{};
   if(s.name){$('name').textContent=s.name;document.title=s.name+'｜制作物まとめ'}
   $('intro').textContent=s.intro||'';
   const sb=[[s.supportUrl,s.supportLabel||'支援する'],[s.supportUrl2,s.supportLabel2||'支援する']].filter(x=>url(x[0]));
-  if(sb.length){const b=$('support');b.hidden=false;b.innerHTML=`<span class="ico star"></span><span>${esc(s.supportText)}</span>`+sb.map(x=>`<a href="${url(x[0])}" ${ext}>${esc(x[1])}</a>`).join('')}
+  if(sb.length){const b=$('support');b.hidden=false;b.innerHTML=`<span class="ico star"></span><span>${esc(s.supportText)}</span>`+sb.map(x=>`<a href="${url(x[0])}" ${ext}>${icon(x[0])}${esc(x[1])}</a>`).join('')}
   $('links').innerHTML=(s.links||[]).filter(l=>url(l.url)).map(l=>`<li><a href="${url(l.url)}" ${ext}><span class="ico paw" style="width:1.1em;height:1.1em"></span>${esc(l.label)}</a></li>`).join('');
   $('aboutBody').innerHTML=(s.profileName?`<p class="pname">${esc(s.profileName)}</p>`:'')+md(s.about||'');
   const ws=(d.works||[]).filter(w=>w.status!=='hidden');
