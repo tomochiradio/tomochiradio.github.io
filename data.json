@@ -72,6 +72,10 @@
       "tags": [],
       "blocks": [
         {
+          "type": "youtube",
+          "url": "https://youtu.be/n3RIPZVqP6E?si=zkqBxZaVLzjjt8qn"
+        },
+        {
           "type": "text",
           "text": "うさぎ（またはねこ）といっしょに遊ぶ、2ボタンのリズムゲームです。\n上から落ちてくる玉が、わっかに重なる瞬間にポン！と弾こう。\nぴったりならPERFECT！つなげて押すとコンボ！\n\nブラウザですぐ遊べます。Windows版のダウンロードもできます。"
         }
