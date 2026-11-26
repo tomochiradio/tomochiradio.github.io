@@ -18,7 +18,7 @@
         "url": ""
       }
     ],
-    "about": "ゲームやツールを作っています。\n\n遊んでくれた人からの感想や、応援が励みです。"
+    "about": ""
   },
   "works": [
     {
@@ -45,8 +45,17 @@
       "status": "public",
       "url": "https://jigenkokuhaku.github.io/kokuhaku-ticket/about.html",
       "thumb": "",
-      "tags": [],
-      "blocks": []
+      "tags": [
+        "メッセージ",
+        "恋愛",
+        "片思い"
+      ],
+      "blocks": [
+        {
+          "type": "text",
+          "text": "大切な相手へ想いを届けるための Webチケットサービスです。\nURLを送るだけで、 相手はメッセージを受け取り、 ACCEPT / DECLINE を選択できます。\n・24時間限定チケット\n・回答は1回のみ\n・ステータス確認可能\n・スマホ対応"
+        }
+      ]
     }
   ]
 }
